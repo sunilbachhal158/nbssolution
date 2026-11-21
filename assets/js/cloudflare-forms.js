@@ -1,6 +1,6 @@
 /* NBS Solution - Cloudflare Worker form handler */
 (() => {
-  const WORKER_API_URL = 'PASTE_YOUR_CLOUDFLARE_WORKER_URL_HERE';
+  const WORKER_API_URL = 'https://nbs-solution-forms.nbssolution.workers.dev';
   document.addEventListener('submit', async (event) => {
     const form = event.target;
     if (!(form instanceof HTMLFormElement) || form.id !== 'contact-form') return;

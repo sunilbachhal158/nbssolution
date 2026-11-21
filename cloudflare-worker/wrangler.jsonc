@@ -1,0 +1,9 @@
+﻿{
+  "name": "nbs-solution-forms",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-21",
+  "vars": {
+    "LEAD_EMAIL": "sunilbachhal158@gmail.com",
+    "MAIL_FROM": "NBS Solution <website@nbssolution.in>"
+  }
+}
