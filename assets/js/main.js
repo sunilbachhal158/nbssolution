@@ -2,15 +2,22 @@
     "use strict";
     var windowOn = $(window);
 
-    /* Windows Load */
-    $(window).on('load', function () {
-        // Preloader Activation
-        $("#pre-load").delay(600).fadeOut(500);
-        $(".pre-loader").delay(600).fadeOut(500);
+   /* Windows Load */
+function handleWindowLoad() {
+    // Preloader Activation
+    $("#pre-load").delay(600).fadeOut(500);
+    $(".pre-loader").delay(600).fadeOut(500);
 
-        // Wow Animation Init
-        wowAnimation();
-    });
+    // Wow Animation Init
+    wowAnimation();
+}
+
+// Handle both normal and dynamically loaded main.js
+if (document.readyState === "complete") {
+    setTimeout(handleWindowLoad, 0);
+} else {
+    $(window).on("load", handleWindowLoad);
+}
 
     /* footer year */
     var yearElement = document.getElementById("year");
