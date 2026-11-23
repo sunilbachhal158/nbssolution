@@ -4285,7 +4285,7 @@ body.demo-is-open .rs-togglebar-wrapper {
 }
 @media only screen and (max-width: 575px) {
   .rs-header-one .header-inner {
-    padding-top: 15px;
+    padding-top:5px;
     padding-bottom: 15px;
   }
 }
